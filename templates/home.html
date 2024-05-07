@@ -1,0 +1,163 @@
+ṇ<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act Price Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+
+</head>
+
+<body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">ACT PRICE</a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pickup Location</h5>
+                            <!-- Pickup -->
+                            <input type="text" name="Pickup_Location" id="Pickup_Location" placeholder="Enter Pickup Location" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Drop_Location</h5>
+                            <!-- Drop -->
+                            <input type="text" name="Drop_Location" id="Drop_Location" placeholder="Enter Drop Location" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pickup Date</h5>
+                            <!-- Pickup Date -->
+                            <input type="datetime-local" name="Pickup_Time" id="Pickup_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+             <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                         <h5 class="card-title">Weight</h5>
+                        <!-- Weight -->
+                        <select>
+                            <option value="0">0</option>
+                            <option value="500kg">500kg</option>
+                            <option value="750kg">750kg</option>
+                            <option value="1250kg">1250kg</option>
+                            <option value="2500kg">2500kg</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                         <h5 class="card-title">Vehicle Type</h5>
+                        <!-- Weight -->
+                        <select>
+                            <option value="Enter Vehicle Type">Enter Vehicle Type</option>
+                            <option value="Tata Ape">Tata Ape</option>
+                            <option value="Tata Ace">Tata Ace</option>
+                            <option value="Ashok Leyland">Ashok Leyland</option>
+                            <option value="Tata 407">Tata 407</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Phone Number</h5>
+                            <!-- Phone Number -->
+                            <input type="number" name="number" id="number" placeholder="Enter a Phone Number" required="required">
+                        </div>
+                    </div>
+                </div>
+           
+             <br>
+             <br> 
+             
+             <!-- Submit -->
+            <br>
+            <br>
+            <input type="submit" value="Submit" class="btn btn-secondary" style="width: 110px; margin: 0 auto;">
+            </form>
+             <br>
+             <br>
+            
+            <h3>{{Prediction_text}}</h3>
+
+    
+
+
+        <!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>
